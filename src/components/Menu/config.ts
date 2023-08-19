@@ -16,11 +16,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Liquidity',
-        href: 'https://baseswap.fi/add/ETH/0x614747C53CB1636b4b962E15e1D66D3214621100',
-      },
-      {
-        label: 'Bridge (Official)',
-        href: 'https://bridge.base.org/deposit',
+        href: 'https://baseswap.fi/add/ETH',
       },
       {
         label: 'Bridge (Axelar)',
@@ -46,17 +42,17 @@ const config: MenuEntry[] = [
       }, */
     ]
   },
-  {
-    label: 'IDO',
-    icon: 'IfoIcon',
-    href: '/ido',
-  },
-
   /* {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: '/lottery',
-  }, */
+     label: 'IDO',
+     icon: 'IfoIcon',
+     href: '/ido',
+   },
+
+    {
+     label: 'Lottery',
+     icon: 'TicketIcon',
+     href: '/lottery',
+   }, */
   /* {
     label: 'Wrap HBD',
     icon: 'DollarIcon',
@@ -81,28 +77,12 @@ const config: MenuEntry[] = [
     icon: 'MoreIcon',
     href: 'https://docs.cookiebase.xyz/',
   },
-  {
-    label: 'Vote',
-    icon: 'FarmIcon',
-    href: 'https://snapshot.org/#/cookiebase.eth',
-  },
+
   
   {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
-      {
-        label: 'Coingecko',
-        href: 'https://www.coingecko.com/en/coins/cookiebase',
-      },
-      {
-        label: 'Coinmarketcap',
-        href: 'https://coinmarketcap.com/currencies/cookiebase/',
-      },
-      {
-        label: 'Defillama',
-        href: 'https://defillama.com/protocol/cookiebase-farm',
-      },
       {
         label: 'DexScreener',
         href: 'https://dexscreener.com/base/0x614747C53CB1636b4b962E15e1D66D3214621100',
@@ -112,17 +92,20 @@ const config: MenuEntry[] = [
         href: 'https://www.dextools.io/app/en/base/pair-explorer/0x9072fed6661a64766a17ac4415dbef0afff627df',
       },
       {
-        label: 'Revoke contract',
-        href: 'https://basescan.org/tokenapprovalchecker',
-      },
-      {
         label: 'Token',
-        href: 'https://basescan.org/address/0x614747C53CB1636b4b962E15e1D66D3214621100#code',
+        href: 'https://basescan.org/address/',
       },
       /* {
         label: 'Blog',
         href: 'https://medium.com/@Cookiedefi',
-      }, */
+      },
+
+       {
+    label: 'Vote',
+    icon: 'FarmIcon',
+    href: 'https://snapshot.org/#/cookiebase.eth',
+  },
+       */
 
     ],
   },
