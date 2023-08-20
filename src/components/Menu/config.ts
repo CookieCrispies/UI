@@ -7,25 +7,25 @@ const config: MenuEntry[] = [
     href: '/',
   },
   {
-    label: 'Trade',
+    label: 'Liquidity',
     icon: 'TradeIcon',
     items: [
       {
-        label: 'Exchange',
+        label: 'Swap',
         href: 'https://baseswap.fi/swap',
       },
       {
-        label: 'Liquidity',
+        label: 'Add Liquidity',
         href: 'https://baseswap.fi/add/ETH',
       },
       {
-        label: 'Bridge (Axelar)',
+        label: 'Bridge',
         href: '/bridge',
       },
     ],
   },
   {
-    label: 'Yield',
+    label: 'Cooking',
     icon: 'PoolIcon',
     items: [
       {
@@ -75,7 +75,7 @@ const config: MenuEntry[] = [
   {
     label: 'Docs',
     icon: 'MoreIcon',
-    href: 'https://docs.cookiebase.xyz/',
+    href: 'https://docs.chocobase.xyz/',
   },
 
   
@@ -85,11 +85,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'DexScreener',
-        href: 'https://dexscreener.com/base/0x614747C53CB1636b4b962E15e1D66D3214621100',
+        href: 'https://dexscreener.com/base/',
       },
       {
         label: 'DexTools',
-        href: 'https://www.dextools.io/app/en/base/pair-explorer/0x9072fed6661a64766a17ac4415dbef0afff627df',
+        href: 'https://www.dextools.io/app/en/base/pair-explorer/',
       },
       {
         label: 'Token',

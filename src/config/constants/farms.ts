@@ -325,28 +325,28 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.Cookie,
   }, */
   {
-    pid: 1,
-    lpSymbol: 'USDC-COOKIE LP',
-    lpAddresses: {
-      97: '',
-      56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
-      369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
-      8453: '0x2EB5b9C15cc097dFbBe91E72787821f3e2525c1D', // TODO
-    },
-    token: tokens.Cookie,
-    quoteToken: tokens.usdc,
-  },
-  {
     pid: 0,
-    lpSymbol: 'ETH-COOKIE LP',
+    lpSymbol: 'CHOCO-ETH LP',
     lpAddresses: {
       97: '',
       56: '0x7BaE0d7D2760E681559fbb502b43fFA26561bA24',
       369: '0x4168ff74C6D552cB05e48B4D28018326bB2079Bb', 
-      8453: '0x9072FEd6661a64766A17ac4415DbeF0aFff627df', // TODO
+      8453: '', // TODO
     },
-    token: tokens.Cookie,
+    token: tokens.choco,
     quoteToken: tokens.eth,
+  },
+  {
+    pid: 1,
+    lpSymbol: 'CHOCO-USDC LP',
+    lpAddresses: {
+      97: '',
+      56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
+      369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
+      8453: '', // TODO
+    },
+    token: tokens.choco,
+    quoteToken: tokens.usdc,
   },
   {
     pid: 2,
@@ -363,14 +363,14 @@ const farms: FarmConfig[] = [
   {
     pid: 3,
     isTokenOnly: true,
-    lpSymbol: 'Cookie',
+    lpSymbol: 'CHOCO',
     lpAddresses: {
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
-      8453: '0x2EB5b9C15cc097dFbBe91E72787821f3e2525c1D', // TODO
+      8453: '', // TODO
     },
-    token: tokens.Cookie,
+    token: tokens.choco,
     quoteToken: tokens.usdc,
   },
   {
@@ -412,21 +412,8 @@ const farms: FarmConfig[] = [
     token: tokens.dai,
     quoteToken: tokens.usdc,
   },
-   {
+ /* {
     pid: 7,
-    isTokenOnly: true,
-    lpSymbol: 'TOSHI',
-    lpAddresses: {
-      97: '',
-      56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
-      369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      8453: '0x5f0a153a64fd734c111b770da11de2c385ca8042',
-    },
-    token: tokens.toshi,
-    quoteToken: tokens.eth,
-  }, 
-  {
-    pid: 8,
     lpSymbol: 'DAI-USDC LP',
     lpAddresses: {
       97: '',
@@ -438,7 +425,7 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.usdc,
   },
   {
-    pid: 9,
+    pid: 8,
     lpSymbol: 'ETH-CBETH LP',
     lpAddresses: {
       97: '',
@@ -449,6 +436,20 @@ const farms: FarmConfig[] = [
     token: tokens.cbeth,
     quoteToken: tokens.eth,
   },
+
+    {
+    pid: 7,
+    isTokenOnly: true,
+    lpSymbol: 'TOSHI',
+    lpAddresses: {
+      97: '',
+      56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
+      369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
+      8453: '0x5f0a153a64fd734c111b770da11de2c385ca8042',
+    },
+    token: tokens.toshi,
+    quoteToken: tokens.eth,
+  }, */
   /* {
     pid: 4,
     isTokenOnly: true,
