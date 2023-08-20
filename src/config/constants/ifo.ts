@@ -2,7 +2,7 @@ import { Ifo } from './types'
 
 const ifos: Ifo[] = [
      /* {
-        id: 'cookie',
+        id: 'Choco',
         address: '0x5A1dF64163AC8e5699697DbF5609C7d228cdb63c',
         isActive: true,
         name: 'CookieBase',

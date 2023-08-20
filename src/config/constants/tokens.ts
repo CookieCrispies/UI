@@ -15,7 +15,7 @@ const tokens = {
     projectLink: 'https://baseswap.fi/',
   },
   cookie: {
-    symbol: 'COOKIE',
+    symbol: 'Choco',
     address: {
       56: '0x614747C53CB1636b4b962E15e1D66D3214621100',
       97: '0x614747C53CB1636b4b962E15e1D66D3214621100',
@@ -23,7 +23,7 @@ const tokens = {
       8453: '0x614747C53CB1636b4b962E15e1D66D3214621100',
     },
     decimals: 18,
-    projectLink: 'https://cookiebase.xyz/',
+    projectLink: 'https://chocoBase.xyz/',
   },
   choco: {
     symbol: 'CHOCO',
@@ -203,7 +203,7 @@ const tokens = {
     projectLink: 'https://bitcoin.org/',
   },
   Cookie: {
-    symbol: 'Cookie',
+    symbol: 'Choco',
     address: {
       56: '0x50d809c74e0b8e49e7b4c65bb3109abe3ff4c1c1',
       97: '',
@@ -211,7 +211,7 @@ const tokens = {
       8453: '0x614747C53CB1636b4b962E15e1D66D3214621100',
     },
     decimals: 18,
-    projectLink: 'https://cookiebase.finance/',
+    projectLink: 'https://chocoBase.finance/',
   },
   bleo: {
     symbol: 'bLEO',
@@ -222,7 +222,7 @@ const tokens = {
       8453: '',
     },
     decimals: 6,
-    projectLink: 'https://cookiebase.finance/',
+    projectLink: 'https://chocoBase.finance/',
   },
   dec: {
     symbol: 'DEC',
@@ -233,7 +233,7 @@ const tokens = {
       8453: '',
     },
     decimals: 6,
-    projectLink: 'https://cookiebase.finance/',
+    projectLink: 'https://chocoBase.finance/',
   },
   bake: {
     symbol: 'BAKE',
@@ -410,7 +410,7 @@ const tokens = {
       8453: '',
     },
     decimals: 3,
-    projectLink: 'https://cookiebase.finance/',
+    projectLink: 'https://chocoBase.finance/',
   },
   bhive: {
     symbol: 'bHIVE',
@@ -421,7 +421,7 @@ const tokens = {
       8453: '',
     },
     decimals: 3,
-    projectLink: 'https://cookiebase.finance/',
+    projectLink: 'https://chocoBase.finance/',
   },
 }
 

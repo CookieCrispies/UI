@@ -1,4 +1,4 @@
-import Cookies from 'js-cookie'
+import Cookie from 'js-cookie'
 import { getProfileContract } from 'utils/contractHelpers'
 import { Nft } from 'config/constants/types'
 import { getNftByTokenId } from 'utils/collectibles'
@@ -49,8 +49,8 @@ const getProfile = async (address: string): Promise<GetProfileResponse> => {
     if (isActive) {
       nft = await getNftByTokenId(nftAddress, tokenId)
 
-      // Save the preview image in a cookie so it can be used on the exchange
-      Cookies.set(
+      // Save the preview image in a Choco so it can be used on the exchange
+      Cookie.set(
         `profile_${address}`,
         {
           username,

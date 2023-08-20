@@ -404,7 +404,7 @@ export const useTotalCookieStaked = (): any => {
   const farms = useFarms()
   let total = { Cookie: new BigNumber(0), value: new BigNumber(0) }
 
-  const CookieFarms = farms.data.filter(farm => farm.token.symbol === 'Cookie' && new BigNumber(farm.userData.stakedBalance).gt(0))
+  const CookieFarms = farms.data.filter(farm => farm.token.symbol === 'Choco' && new BigNumber(farm.userData.stakedBalance).gt(0))
 
   total = CookieFarms.reduce((accu, farm) => {
     let newAccu = accu

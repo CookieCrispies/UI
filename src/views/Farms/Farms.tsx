@@ -407,15 +407,15 @@ const Farms: React.FC<FarmsProps> = ({ tokenMode, kingdomMode }) => {
   }
 
   let header = TranslateString(674, 'Farms')
-  let heading = TranslateString(320, 'Stake LP tokens to earn Cookie')
-  const subHeading = TranslateString(10000, 'Deposit Fee will be used to buyback Cookie')
+  let heading = TranslateString(320, 'Stake LP tokens to earn Choco')
+  const subHeading = TranslateString(10000, 'Deposit Fee will be used to buyback Choco')
   // let extra = null
   // const data = useGetStats()
   // const tvl = data ? data.total_value_locked_all.toLocaleString('en-US', { maximumFractionDigits: 0 }) : null
 
   if (tokenMode) {
     header = TranslateString(674, 'Pools')
-    heading = TranslateString(10002, 'Stake tokens to earn Cookie')
+    heading = TranslateString(10002, 'Stake tokens to earn Choco')
   }
 
   const tlvSpacing = '20px'

@@ -590,7 +590,7 @@ const farms: FarmConfig[] = [
     isKingdom: true,
     isKingdomToken: true,
     farmType: 'Cookie DeFi',
-    lpSymbol: 'Cookie',
+    lpSymbol: 'Choco',
     lpAddresses: {
       97: '',
       56: '0x0EF564D4F8D6C0ffE13348A32e21EFd55e508e84', // Cookie-BUSD LP

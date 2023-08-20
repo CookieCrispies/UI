@@ -43,7 +43,7 @@ const campaigns: Campaign[] = [
   {
     id: '511050000',
     type: 'ifo',
-    title: 'Cookie',
+    title: 'Choco',
     badge: 'Cookie.jpg',
   },
   {

@@ -1,44 +1,44 @@
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'CookieBase',
+  title: 'ChocoBase',
   description:
-    'Sweeten your DeFi journey with CookieBase! 🌟 Embrace creamy yields and crumbly rewards on Base Blockchain.',
-  image: 'https://cookiebase.finance/images/2logos',
+    'Sweeten your DeFi journey with ChocoBase! 🌟 Embrace creamy yields and crumbly rewards on Base Blockchain.',
+  image: 'https://chocoBase.finance/images/2logos',
 }
 
 export const customMeta: { [key: string]: PageMeta } = {
   '/': {
-    title: 'Home | CookieBase',
+    title: 'Home | ChocoBase',
   },
   '/competition': {
-    title: 'Trading Battle | CookieBase',
+    title: 'Trading Battle | ChocoBase',
   },
   '/prediction': {
-    title: 'Prediction | CookieBase',
+    title: 'Prediction | ChocoBase',
   },
   '/farms': {
-    title: 'Farms | CookieBase',
+    title: 'Farms | ChocoBase',
   },
   '/pools': {
-    title: 'Pools | CookieBase',
+    title: 'Pools | ChocoBase',
   },
   '/lottery': {
-    title: 'Lottery | CookieBase',
+    title: 'Lottery | ChocoBase',
   },
   '/collectibles': {
-    title: 'Collectibles | CookieBase',
+    title: 'Collectibles | ChocoBase',
   },
   '/ido': {
-    title: 'Initial DEX Offering | CookieBase',
+    title: 'Initial DEX Offering | ChocoBase',
   },
   '/teams': {
-    title: 'Leaderboard | CookieBase',
+    title: 'Leaderboard | ChocoBase',
   },
   '/profile/tasks': {
-    title: 'Task Center | CookieBase',
+    title: 'Task Center | ChocoBase',
   },
   '/profile': {
-    title: 'Your Profile | CookieBase',
+    title: 'Your Profile | ChocoBase',
   },
 }

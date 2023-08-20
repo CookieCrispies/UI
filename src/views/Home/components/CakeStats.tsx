@@ -43,7 +43,7 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'Cookie Stats')}
+          {TranslateString(534, 'Choco Stats')}
         </Heading>
         <Row>
           <Text fontSize="14px">Market Cap</Text>
@@ -58,7 +58,7 @@ const CakeStats = () => {
           <CardValue fontSize="14px" value={0} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">New Cookie/block</Text>
+          <Text fontSize="14px">New Choco/block</Text>
           <Text bold fontSize="14px">
             {CookiePerBlock}
           </Text>

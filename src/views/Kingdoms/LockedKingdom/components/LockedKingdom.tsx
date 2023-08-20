@@ -133,7 +133,7 @@ const LockedKingdom: React.FC<KingdomProps> = ({ farm, removed, cakePrice, accou
     <>
       <Spacer />
       <K>
-        {farm.token.symbol === 'Cookie' && <StyledCardAccent />}
+        {farm.token.symbol === 'Choco' && <StyledCardAccent />}
         <KMain role="presentation" className="flex-grid k-grid" onClick={() => setShowExpandableSection(!showExpandableSection)}
       >
           <div className="col"><KImage src={`/images/farms/${farmImage}.png`} alt={lpSymbol} width={64} height={64} /></div>

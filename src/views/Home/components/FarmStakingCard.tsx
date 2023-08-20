@@ -89,7 +89,7 @@ const FarmedStakingCard = () => {
             type: 'ERC20',
             options: {
               address: '0x02Dff78fDeDaF86D9dfbe9B3132aA3Ea72Ed1680',
-              symbol: 'Cookie',
+              symbol: 'Choco',
               decimals: '18',
               image:
                   'https://raw.githubusercontent.com/Cookie-Factory/images/master/logo.png',
@@ -113,15 +113,15 @@ const FarmedStakingCard = () => {
           <Row> {TranslateString(542, 'Farms & Staking')} </Row>
         </Heading>
         <TokenImageWrapper>
-        <CardImage src="/images/Cookie/logo-card-image.png" alt="Cookie logo" width={64} height={64} />
+        <CardImage src="/images/Cookie/logo-card-image.png" alt="Choco logo" width={64} height={64} />
 
         </TokenImageWrapper>
             <Block>
-              <Label>{TranslateString(544, 'Cookie to Harvest')}:</Label>
+              <Label>{TranslateString(544, 'Choco to Harvest')}:</Label>
               <CakeHarvestBalance />
             </Block>
             <Block>
-              <Label>{TranslateString(546, 'Cookie in Wallet')}:</Label>
+              <Label>{TranslateString(546, 'Choco in Wallet')}:</Label>
               <CakeWalletBalance />
             </Block>
             <Actions>
@@ -133,7 +133,7 @@ const FarmedStakingCard = () => {
                   width="100%"
                 >
                   {pendingTx
-                    ? TranslateString(548, 'Collecting Cookie')
+                    ? TranslateString(548, 'Collecting Choco')
                     : TranslateString(532, `Harvest all (${balancesWithValue.length})`, {
                         count: balancesWithValue.length,
                       })}
