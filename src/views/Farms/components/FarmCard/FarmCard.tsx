@@ -151,7 +151,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, plsPrice,
         : '-'
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.toUpperCase().replace('PANCAKE', '')
-  const earnLabel = farm.dual ? farm.dual.earnLabel : 'Cookie'
+  const earnLabel = farm.dual ? farm.dual.earnLabel : 'Choco'
 
   const farmAPR = farm.apr && farm.apr.toLocaleString('en-US', { maximumFractionDigits: 2 })
 
@@ -179,7 +179,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, plsPrice,
 
   return (
     <FCard>
-      {farm.token.symbol === 'Cookie' && <StyledCardAccent />}
+      {farm.token.symbol === 'Choco' && <StyledCardAccent />}
       <CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}
