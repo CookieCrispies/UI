@@ -35,7 +35,7 @@ const EarnAPRCard = () => {
         if (farm.lpTotalInQuoteToken) {
           const quoteTokenPriceUsd = farm.quoteToken.busdPrice
           const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(quoteTokenPriceUsd)
-          return getFarmApr(farm.CookiePerBlock, farm.poolWeight, cakePrice, totalLiquidity)
+          return getFarmApr(farm.ChocoPerBlock, farm.poolWeight, cakePrice, totalLiquidity)
         }
         return null
       })

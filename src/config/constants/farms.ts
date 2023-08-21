@@ -331,7 +331,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x7BaE0d7D2760E681559fbb502b43fFA26561bA24',
       369: '0x4168ff74C6D552cB05e48B4D28018326bB2079Bb', 
-      8453: '', // TODO
+      8453: '0xb299321d689c366057B95C0ff10a5Ba936290A63', // TODO
     },
     token: tokens.choco,
     quoteToken: tokens.eth,
@@ -343,7 +343,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
-      8453: '', // TODO
+      8453: '0xbff98F46c76ee3e0cFF3BfD3E0eDd9aca664F16C', // TODO
     },
     token: tokens.choco,
     quoteToken: tokens.usdc,
@@ -374,6 +374,7 @@ const farms: FarmConfig[] = [
     token: tokens.eth,
     quoteToken: tokens.usdc,
   },
+  /* 
   {
     pid: 5,
     isTokenOnly: true,
@@ -400,7 +401,7 @@ const farms: FarmConfig[] = [
     token: tokens.dai,
     quoteToken: tokens.usdc,
   },
- /* {
+  {
     pid: 7,
     lpSymbol: 'DAI-USDC LP',
     lpAddresses: {
@@ -437,8 +438,8 @@ const farms: FarmConfig[] = [
     },
     token: tokens.toshi,
     quoteToken: tokens.eth,
-  }, */
-  /* {
+  }, 
+  {
     pid: 4,
     isTokenOnly: true,
     lpSymbol: 'WPLS',

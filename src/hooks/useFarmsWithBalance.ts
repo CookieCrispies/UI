@@ -24,7 +24,7 @@ const useFarmsWithBalance = () => {
     const fetchBalances = async () => {
       const calls = nonKingdomFarms.map((farm) => ({
         address: getMasterChefAddress(),
-        name: 'pendingCookie',
+        name: 'pendingChoco',
         params: [farm.pid, account],
       }))
 
@@ -33,7 +33,7 @@ const useFarmsWithBalance = () => {
 
       const callsK = kingdomFarms.filter(f => f.pid === 100).map((farm) => ({
         address: getKingdomsAddress(),
-        name: 'pendingCookie',
+        name: 'pendingChoco',
         params: [farm.pid, account],
       }))
 

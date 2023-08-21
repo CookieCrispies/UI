@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Swap',
-        href: 'https://baseswap.fi/swap',
+        href: 'https://baseswap.fi/swap?outputCurrency=0x6d6080492D0Bd40F1e44cc16791CC1664357f685',
       },
       {
         label: 'Add Liquidity',
-        href: 'https://baseswap.fi/add/ETH',
+        href: 'https://baseswap.fi/add/ETH/0x6d6080492D0Bd40F1e44cc16791CC1664357f685',
       },
       {
         label: 'Bridge',
@@ -85,15 +85,15 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'DexScreener',
-        href: 'https://dexscreener.com/base/',
+        href: 'https://dexscreener.com/base/0x6d6080492D0Bd40F1e44cc16791CC1664357f685',
       },
       {
         label: 'DexTools',
-        href: 'https://www.dextools.io/app/en/base/pair-explorer/',
+        href: 'https://www.dextools.io/app/en/base/pair-explorer/0xb299321d689c366057b95c0ff10a5ba936290a63',
       },
       {
         label: 'Token',
-        href: 'https://basescan.org/address/',
+        href: 'https://basescan.org/address/0x6d6080492D0Bd40F1e44cc16791CC1664357f685#code',
       },
       /* {
         label: 'Blog',

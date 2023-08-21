@@ -34,9 +34,9 @@ const CakeStats = () => {
   const cakeSupply = getBalanceNumber(circSupply);
   const marketCap = CookiePrice.times(circSupply);
   const {data:farms} = useFarms();
-  let CookiePerBlock = 0
-  if (farms && farms[0] && farms[0]?.CookiePerBlock) {
-    CookiePerBlock = new BigNumber(farms[0]?.CookiePerBlock).toNumber()
+  let ChocoPerBlock = 0
+  if (farms && farms[0] && farms[0]?.ChocoPerBlock) {
+    ChocoPerBlock = new BigNumber(farms[0]?.ChocoPerBlock).toNumber()
   }
 
   return (
@@ -60,7 +60,7 @@ const CakeStats = () => {
         <Row>
           <Text fontSize="14px">New Choco/block</Text>
           <Text bold fontSize="14px">
-            {CookiePerBlock}
+            {ChocoPerBlock}
           </Text>
         </Row>
        
