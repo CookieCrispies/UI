@@ -7,10 +7,10 @@ import tokens from "./tokens";
 const pools: PoolConfig[] = [
      {
      sousId: 0,
-     stakingToken: tokens.cookie,
-     earningToken: tokens.cookie,
+     stakingToken: tokens.choco,
+     earningToken: tokens.choco,
      contractAddress: {
-       8453: '0x0544b381F24eaC255ED1e2Ab2a67f10D2502921a',
+       8453: '',
        56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
          97: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
          369: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',

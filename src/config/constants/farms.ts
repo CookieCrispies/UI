@@ -360,19 +360,7 @@ const farms: FarmConfig[] = [
     token: tokens.eth,
     quoteToken: tokens.usdc,
   },
-  {
-    pid: 3,
-    isTokenOnly: true,
-    lpSymbol: 'CHOCO',
-    lpAddresses: {
-      97: '',
-      56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
-      369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
-      8453: '', // TODO
-    },
-    token: tokens.choco,
-    quoteToken: tokens.usdc,
-  },
+  
   {
     pid: 4,
     isTokenOnly: true,

@@ -16,7 +16,7 @@ const StyledCardHeader: React.FC<{
 }> = ({ earningTokenSymbol, stakingTokenSymbol, isFinished = false, isAutoVault = false }) => {
   const TranslateString = useI18n()
   const poolImageSrc = isAutoVault
-    ? `cake-cakevault.svg`
+    ? `choco-chocovault.svg`
     : `${earningTokenSymbol}-${stakingTokenSymbol}.svg`.toLocaleLowerCase()
   const isCakePool = earningTokenSymbol === 'Choco' && stakingTokenSymbol === 'Choco'
   const background = isCakePool ? 'bubblegum' : 'cardHeader'
