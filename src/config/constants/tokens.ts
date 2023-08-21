@@ -208,7 +208,7 @@ const tokens = {
       56: '0x50d809c74e0b8e49e7b4c65bb3109abe3ff4c1c1',
       97: '',
       369: '0xece11C704F38FF38520667AeCDd7f53eA82F60F5',
-      8453: '0x614747C53CB1636b4b962E15e1D66D3214621100',
+      8453: '0x6d6080492D0Bd40F1e44cc16791CC1664357f685',
     },
     decimals: 18,
     projectLink: 'https://chocoBase.finance/',

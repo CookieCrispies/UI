@@ -9,7 +9,7 @@ export default {
     56: '0x227e79c83065edb8b954848c46ca50b96cb33e16',
     97: '',
     369:'0xca3E704Bd09B979170D76d34880c7A72fda51B63',
-    8453:'', 
+    8453:'0x03B03cB12C3C9079BD6f1F155BD3348e99692d9b', 
   },
   kingdoms: {
     56: '0x2e72f4b196b9e5b89c29579cc135756a00e6cbbd',

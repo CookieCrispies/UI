@@ -99,7 +99,7 @@ export interface FarmConfig {
   tokenPerBlock?: number
   totalSupplyBelt?: BigNumber
   pcsVersion?: number
-  CookiePerBlock?: BigNumber
+  ChocoPerBlock?: BigNumber
 }
 
 export interface PoolConfig {

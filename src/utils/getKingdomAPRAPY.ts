@@ -20,7 +20,7 @@ const getKingdomAPRAPY = (
 
   if (altPid === 12) {
     const totalLiquidity = new BigNumber(CookieDen.lpTotalInQuoteToken).times(CookieDen.quoteToken.busdPrice)
-    apr = getFarmApr(CookieDen.CookiePerBlock, CookieDen.poolWeight, CookieDen.tokenPriceVsQuote, totalLiquidity)
+    apr = getFarmApr(CookieDen.ChocoPerBlock, CookieDen.poolWeight, CookieDen.tokenPriceVsQuote, totalLiquidity)
 
     const dailyAPR = new BigNumber(apr).div(new BigNumber(365)).toNumber()
 
@@ -48,7 +48,7 @@ const getKingdomAPRAPY = (
     else if (farmType === 'Belt') farmTokenPrice = beltPrice
 
     if (farmType === 'Belt') apr = Number(beltAPR)
-    else apr = getFarmApr(farm.CookiePerBlock, new BigNumber(poolWeightPCS), farmTokenPrice, totalLiquidity, isKingdom, farmType)
+    else apr = getFarmApr(farm.ChocoPerBlock, new BigNumber(poolWeightPCS), farmTokenPrice, totalLiquidity, isKingdom, farmType)
   }
 
   const lpRewardsApr = lpAprs[farm.lpAddresses['56']?.toLocaleLowerCase()] ?? 0

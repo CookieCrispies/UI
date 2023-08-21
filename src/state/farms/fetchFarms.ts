@@ -283,11 +283,11 @@ const fetchFarms = async (farmsToFetch: FarmConfig[]) => {
           },
           {
             address: getMasterChefAddress(),
-            name: 'CookiePerBlock',
+            name: 'ChocoPerBlock',
           }
         ]
 
-        const [info, totalAllocPoint, CookiePerBlock] = await multicall(masterchefABI, mCalls).catch(error => {
+        const [info, totalAllocPoint, ChocoPerBlock] = await multicall(masterchefABI, mCalls).catch(error => {
           console.log("multicall error")
           throw new Error(`multicall nontoken: ${error}`)
         })
@@ -391,7 +391,7 @@ const fetchFarms = async (farmsToFetch: FarmConfig[]) => {
           }
 
           console.log("Cookie per block")
-          console.log(CookiePerBlock);
+          console.log(ChocoPerBlock);
 
           return {
             ...farmConfig,
@@ -404,7 +404,7 @@ const fetchFarms = async (farmsToFetch: FarmConfig[]) => {
             // multiplier: farmConfig.pid === 4 ? '30X' : `2X`,
             // multiplier: '1.5X',
             depositFeeBP: kInfo.depositFeeBP,
-            CookiePerBlock: new BigNumber(CookiePerBlock).div(BIG_TEN.pow(DEFAULT_TOKEN_DECIMAL)).toNumber(),
+            ChocoPerBlock: new BigNumber(ChocoPerBlock).div(BIG_TEN.pow(DEFAULT_TOKEN_DECIMAL)).toNumber(),
             lpTokenBalancePCS: new BigNumber(lpTokenBalanceMC).div(DEFAULT_TOKEN_DECIMAL).toNumber(),
             lpTotalInQuoteTokenPCS: lpTotalInQuoteTokenPCS.toNumber(),
             poolWeightPCS: poolWeightPCS.toJSON(),
@@ -432,7 +432,7 @@ const fetchFarms = async (farmsToFetch: FarmConfig[]) => {
           lockedKingdomData: await asyncLockedKingdomData,
           multiplier: `${allocPoint.div(100).toString()}X`,
           depositFeeBP: info.depositFeeBP,
-          CookiePerBlock: new BigNumber(CookiePerBlock).div(DEFAULT_TOKEN_DECIMAL).toNumber(),
+          ChocoPerBlock: new BigNumber(ChocoPerBlock).div(DEFAULT_TOKEN_DECIMAL).toNumber(),
           tokenAmountTotal: tokenAmountTotal.toJSON(),
           lpTokenBalance: new BigNumber(lpTokenBalanceMC).div(DEFAULT_TOKEN_DECIMAL).toNumber(),
         }
