@@ -65,10 +65,10 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({
 
   const displayBalance = useCallback(() => {
     const stakedBalanceNumber = new BigNumber(stakedBalance).div(new BigNumber(10).pow(decimals)).toNumber()
-    if (stakedBalanceNumber > 0 && stakedBalanceNumber < 0.0001) {
-      return getFullDisplayBalance(new BigNumber(stakedBalanceNumber)).toLocaleString()
-    }
-    return Number(stakedBalanceNumber).toLocaleString(undefined, { maximumFractionDigits: 4 })
+    // if (stakedBalanceNumber > 0 && stakedBalanceNumber < 0.0001) {
+    //   return getFullDisplayBalance(new BigNumber(stakedBalanceNumber)).toLocaleString()
+    // }
+    return Number(stakedBalanceNumber).toLocaleString(undefined, { maximumFractionDigits: 5 })
   }, [stakedBalance, decimals])
 
   const stakedBalanceString = new BigNumber(stakedBalance).div(new BigNumber(10).pow(decimals));

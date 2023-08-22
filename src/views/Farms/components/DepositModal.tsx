@@ -26,7 +26,7 @@ const DepositModal: React.FC<DepositModalProps> = ({ max, onConfirm, onDismiss, 
   const [pendingTx, setPendingTx] = useState(false)
   const TranslateString = useI18n()
   const fullBalance = useMemo(() => {
-    return getFullDisplayBalance(max,0)
+    return getFullDisplayBalance(max,4)
   }, [max])
 
   const valNumber = new BigNumber(val)
