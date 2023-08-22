@@ -37,7 +37,7 @@ const CakeVaultCard: React.FC<{ pool: Pool; account: string }> = ({ pool, accoun
 
   return (
     <StyledCard isStaking={accountHasSharesStaked}>
-      <StyledCardHeader isAutoVault earningTokenSymbol="CAKE" stakingTokenSymbol="CAKE" />
+      <StyledCardHeader isAutoVault earningTokenSymbol="CHOCO" stakingTokenSymbol="CHOCO" />
       <StyledCardBody isLoading={isLoading}>
         <AprRow
           pool={pool}
