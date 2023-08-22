@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Bantayog Regular', sans-serif;
   }
   body {
-    background-color: #FBD4B9;
+    background-color: #98b6fa;
     
     img {
       height: auto;
