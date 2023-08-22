@@ -30,10 +30,10 @@ export const BELT_PER_YEAR = BELT_PER_BLOCK.times(BLOCKS_PER_YEAR)
 
 // export const PCS_BLOCKS_PER_YEAR = new BigNumber((60 / BSC_BLOCK_TIME) * 60 * 24 * 365) // 10512000
 export const BASE_URL = 'https://cookiebase.finance/'
-export const BASE_EXCHANGE_URL = 'https://baseswap.fi/swap'
+export const BASE_EXCHANGE_URL = 'https://baseswap.fi/swap?outputCurrency=0x6d6080492D0Bd40F1e44cc16791CC1664357f685'
 export const BASE_ADD_LIQUIDITY_URL = `${BASE_EXCHANGE_URL}/#/add`
 export const BASE_LIQUIDITY_POOL_URL = `${BASE_EXCHANGE_URL}/#/pool`
-export const PCS_EXCHANGE_URL = 'https://baseswap.fi/swap'
+export const PCS_EXCHANGE_URL = 'https://baseswap.fi/swap?outputCurrency=0x6d6080492D0Bd40F1e44cc16791CC1664357f685'
 export const PCS_ADD_LIQUIDITY_URL = `${PCS_EXCHANGE_URL}/add`
 export const PCS_LIQUIDITY_POOL_URL = `${PCS_EXCHANGE_URL}/pool`
 export const BAKERY_EXCHANGE_URL = 'https://www.bakeryswap.org'

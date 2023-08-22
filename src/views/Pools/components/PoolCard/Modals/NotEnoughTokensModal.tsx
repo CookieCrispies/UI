@@ -34,12 +34,6 @@ const NotEnoughTokensModal: React.FC<NotEnoughTokensModalProps> = ({ tokenSymbol
       <Button mt="24px" as="a" external href={BASE_EXCHANGE_URL}>
         {TranslateString(999, 'Buy')} {tokenSymbol}
       </Button>
-      <StyledLink href="https://yieldwatch.net" external>
-        <Button variant="secondary" mt="8px" width="100%">
-          {TranslateString(999, 'Locate Assets')}
-          <OpenNewIcon color="primary" ml="4px" />
-        </Button>
-      </StyledLink>
       <Button variant="text" onClick={onDismiss}>
         {TranslateString(999, 'Close window')}
       </Button>
