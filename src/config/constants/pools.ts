@@ -10,7 +10,7 @@ const pools: PoolConfig[] = [
      stakingToken: tokens.choco,
      earningToken: tokens.choco,
      contractAddress: {
-       8453: '',
+       8453: '0xfdcE17e8Ca5dF26A370d6C4D042d7Da9a18B4f33',
        56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
          97: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
          369: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',

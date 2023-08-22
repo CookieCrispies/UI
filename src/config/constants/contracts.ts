@@ -148,7 +148,7 @@ export default {
     56: '0xa80240Eb5d7E05d3F250cF000eEc0891d00b51CC',
     97: '',
     369: '',
-    8453: '',
+    8453: '0xfdcE17e8Ca5dF26A370d6C4D042d7Da9a18B4f33',
   },
   predictions: {
     56: '',

@@ -19,8 +19,8 @@ const useGetVaultBountyInfo = (refresh?: number) => {
     // Call contract to get estimated rewards
     const fetchRewards = async () => {
       const [estimatedRewards, pendingCakeRewards] = await makeBatchRequest([
-        cakeVaultContract.methods.calculateHarvestCakeRewards().call,
-        cakeVaultContract.methods.calculateTotalPendingCakeRewards().call,
+        cakeVaultContract.methods.calculateHarvestChocoRewards().call,
+        cakeVaultContract.methods.calculateTotalPendingChocoRewards().call,
       ])
       setEstimatedCallBountyReward(new BigNumber(estimatedRewards as string))
       setTotalPendingCakeRewards(new BigNumber(pendingCakeRewards as string))
