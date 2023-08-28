@@ -61,7 +61,7 @@ export const getFarmBaseTokenPrice = (farm: Farm, quoteTokenFarm: Farm, bnbPrice
 
 export const getFarmQuoteTokenPrice = (farm: Farm, quoteTokenFarm: Farm, bnbPriceBusd: BigNumber): BigNumber => {
   if (farm.quoteToken.symbol === 'WETH') {
-    return new BigNumber(1)
+    return new BigNumber(1644.32)
   }
 
   if (farm.quoteToken.symbol === 'WBONE') {
@@ -85,7 +85,7 @@ export const getFarmQuoteTokenPrice = (farm: Farm, quoteTokenFarm: Farm, bnbPric
 
 const fetchFarmsPrices = async (farms) => {
   const bnbBusdFarm = farms.find((farm: Farm) => farm.pid === 2)
-  const bnbPriceBusd = bnbBusdFarm.tokenPriceVsQuote ? new BigNumber(1).times(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
+  const bnbPriceBusd = bnbBusdFarm.tokenPriceVsQuote ? new BigNumber(1644.32).times(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
   // console.log('bnbPriceBusd',bnbPriceBusd.toFormat(10))
 
   const farmsWithPrices = farms.map((farm) => {
