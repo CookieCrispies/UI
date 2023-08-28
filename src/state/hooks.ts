@@ -231,15 +231,16 @@ export const useGetApiPrice = (address: string) => {
 
 export const usePriceBnbBusd = (): BigNumber => {
   const bnbBusdFarm = useFarmFromPid(2)
-  return bnbBusdFarm.tokenPriceVsQuote ? new BigNumber(1).div(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
+  return bnbBusdFarm.tokenPriceVsQuote ? new BigNumber(1644.32).times(bnbBusdFarm.tokenPriceVsQuote) : BIG_ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
   const cakeBnbFarm = useFarmFromPid(0)
   const bnbBusdPrice = usePriceBnbBusd()
+  console.log('cake tokenPriceVsQuote', cakeBnbFarm.tokenPriceVsQuote)
   //
   // const cakeBusdPrice = cakeBnbFarm.tokenPriceVsQuote ? bnbBusdPrice.times(cakeBnbFarm.tokenPriceVsQuote) : BIG_ZERO
-  const cakeBusdPrice = cakeBnbFarm.tokenPriceVsQuote ? new BigNumber(cakeBnbFarm.tokenPriceVsQuote).div(new BigNumber(bnbBusdPrice)) : BIG_ZERO
+  const cakeBusdPrice = cakeBnbFarm.tokenPriceVsQuote ? new BigNumber(cakeBnbFarm.tokenPriceVsQuote).times(new BigNumber(bnbBusdPrice)) : BIG_ZERO
   return cakeBusdPrice
 }
 

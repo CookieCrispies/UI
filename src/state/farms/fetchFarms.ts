@@ -121,9 +121,17 @@ const fetchFarms = async (farmsToFetch: FarmConfig[]) => {
           ]
         }
 // if (farmConfig.lpSymbol === 'beltBTC') console.log('calls',calls)
+        let multiResult;
+        try {
+          multiResult = await multicall(erc20, calls)
+        } catch(e) {
+          console.log(farmConfig.pid)
+        }
 
-        const multiResult = await multicall(erc20, calls)
-
+        if (!multiResult)
+        {
+          console.log('error')
+        }
         const [
           tokenBalanceLP,
           quoteTokenBalanceLP,
@@ -217,8 +225,8 @@ const fetchFarms = async (farmsToFetch: FarmConfig[]) => {
 
           if (farmConfig.farmType === 'Belt') tokenAmount = new BigNumber(kingdomSupply)
 
-          if (farmConfig.token.symbol === 'USDC' && farmConfig.quoteToken.symbol === 'USDC') {
-            tokenPriceVsQuote = new BigNumber(1)
+          if (farmConfig.token.symbol === 'WETH' && farmConfig.quoteToken.symbol === 'WETH') {
+            tokenPriceVsQuote = new BigNumber(1644.32)
           } else {
             tokenPriceVsQuote = new BigNumber(quoteTokenBalanceLP).div(new BigNumber(tokenBalanceLP)).div(BIG_TEN.pow(farmConfig.quoteToken.decimals)).times(BIG_TEN.pow(farmConfig.token.decimals))
           }

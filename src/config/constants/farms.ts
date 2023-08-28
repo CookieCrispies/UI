@@ -381,10 +381,10 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      109 : '0x8ed7d143Ef452316Ab1123d28Ab302dC3b80d3ce',
+      109 : '0xf7Ca0561E648043cfce9353E2F6f1A3A3813b3f5',
     },
     token: tokens.eth,
-    quoteToken: tokens.usdc,
+    quoteToken: tokens.WBONE,
   },
   // {
   //   pid: 5,
@@ -407,10 +407,10 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      109 : '0x213c25900f365F1BE338Df478CD82beF7Fd43F85', // TODO
+      109 : '0xf7Ca0561E648043cfce9353E2F6f1A3A3813b3f5', // TODO
     },
     token: tokens.WBONE,
-    quoteToken: tokens.usdc,
+    quoteToken: tokens.eth,
   },
   // {
   //   pid: 6,
