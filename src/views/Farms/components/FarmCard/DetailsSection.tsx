@@ -39,14 +39,14 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   return (
     <Wrapper>
        
-      <Flex justifyContent="space-between">
+       <Flex justifyContent="space-between">
         <Text>{TranslateString(354, 'Total Liquidity')}:</Text>
         <Text>{totalValueFormatted}</Text>
       </Flex>
        
       
        <StyledLinkExternal href={bscScanAddress}>{TranslateString(999, 'View Contract')}</StyledLinkExternal>
-      <StyledLinkExternal href={infoAddress}>{TranslateString(999, 'See Pair Info')}</StyledLinkExternal>
+      
     </Wrapper>
   )
 }

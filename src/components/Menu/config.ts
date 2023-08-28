@@ -12,36 +12,29 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Swap',
-        href: 'https://baseswap.fi/swap?outputCurrency=0x6d6080492D0Bd40F1e44cc16791CC1664357f685',
+        href: 'https://shibbex.com/fr/swap',
       },
       {
         label: 'Add Liquidity',
-        href: 'https://baseswap.fi/add/ETH/0x6d6080492D0Bd40F1e44cc16791CC1664357f685',
+        href: 'https://shibbex.com/fr/add/ETH',
       },
       {
         label: 'Bridge',
-        href: '/bridge',
+        href: 'https://shibarium.shib.io/bridge',
       },
     ],
   },
   {
-    label: 'Cooking',
-    icon: 'PoolIcon',
-    items: [
-      {
-        label: 'Farms',
-        href: '/farms',
-      },
-      {
-        label: 'Pools',
-        href: '/pools',
-      },
-       {
-        label: 'Kitchen',
-        href: '/kitchen',
-      }, 
-    ]
+    label: 'Bowl',
+    icon: 'FarmIcon',
+    href: '/farms',
   },
+  {
+    label: 'Food',
+    icon: 'PoolIcon',
+    href: '/pools',
+  },
+    
   /* {
      label: 'IDO',
      icon: 'IfoIcon',
@@ -75,7 +68,7 @@ const config: MenuEntry[] = [
   {
     label: 'Docs',
     icon: 'MoreIcon',
-    href: 'https://docs.chocobase.xyz/',
+    href: 'https://docs.chocoinu.com/',
   },
 
   
@@ -85,15 +78,15 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'DexScreener',
-        href: 'https://dexscreener.com/base/0x6d6080492D0Bd40F1e44cc16791CC1664357f685',
+        href: 'https://dexscreener.com',
       },
       {
         label: 'DexTools',
-        href: 'https://www.dextools.io/app/en/base/pair-explorer/0xb299321d689c366057b95c0ff10a5ba936290a63',
+        href: 'https://www.dextools.io',
       },
       {
         label: 'Token',
-        href: 'https://basescan.org/address/0x6d6080492D0Bd40F1e44cc16791CC1664357f685#code',
+        href: 'https://www.shibariumscan.io',
       },
       /* {
         label: 'Blog',

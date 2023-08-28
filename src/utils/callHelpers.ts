@@ -13,7 +13,7 @@ export const approve = async (lpContract, masterChefContract, account) => {
 
 export const stake = async (masterChefContract, pid, amount, account) => {
   let decimals = DEFAULT_TOKEN_DECIMAL;
-  if (pid === 5)
+  if (pid === 10)
     decimals = BIG_TEN.pow(6);
   return masterChefContract.methods
     .deposit(pid, new BigNumber(amount).times(decimals).toString())
@@ -52,7 +52,7 @@ export const sousStakeBnb = async (sousChefContract, amount, account) => {
 
 export const unstake = async (masterChefContract, pid, amount, account) => {
   let decimals = DEFAULT_TOKEN_DECIMAL;
-  if (pid === 5)
+  if (pid === 10)
     decimals = BIG_TEN.pow(6);
   return masterChefContract.methods
     .withdraw(pid, new BigNumber(amount).times(decimals).toString())

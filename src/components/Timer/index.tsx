@@ -49,8 +49,8 @@ const TooltipContent = ({ blockNumber }) => (
     <Text color="body" mb="10px" fontWeight="600">
       Block {blockNumber}
     </Text>
-    <Link external href={`https://basescan.org//block/${blockNumber}`}>
-      View on BscScan
+    <Link external href={`https://www.shibariumscan.io/block/${blockNumber}`}>
+      View on Shibarium explorer
     </Link>
   </>
 )

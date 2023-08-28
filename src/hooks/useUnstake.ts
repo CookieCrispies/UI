@@ -52,7 +52,7 @@ export const useLockedUnstake = (maxShares: string) => {
     return { onUnstake: handleUnstake }
 }
 
-const SYRUPIDS = [5, 6, 3, 1, 22, 23, 78]
+const SYRUPIDS = [5, 6, 1, 22, 23, 78]
 
 export const useSousUnstake = (sousId) => {
   const dispatch = useAppDispatch()
@@ -63,8 +63,8 @@ export const useSousUnstake = (sousId) => {
 
   const handleUnstake = useCallback(
     async (amount: string, decimals: number) => {
-      if (sousId === 0) {
-        const txHash = await unstake(masterChefContract, 0, amount, account)
+      if (sousId === 3) {
+        const txHash = await unstake(masterChefContract, 3, amount, account)
         console.info(txHash)
       } else if (isOldSyrup) {
         const txHash = await sousEmergencyUnstake(sousChefContract, amount, account)

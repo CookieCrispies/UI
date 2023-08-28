@@ -44,8 +44,8 @@ export const useSousHarvest = (sousId, isUsingBnb = false) => {
   const masterChefContract = useMasterchef()
 
   const handleHarvest = useCallback(async () => {
-    if (sousId === 0) {
-      await harvest(masterChefContract, 0, account, false)
+    if (sousId === 3) {
+      await harvest(masterChefContract, 3, account, false)
     } else if (isUsingBnb) {
       await soushHarvestBnb(sousChefContract, account)
     } else {

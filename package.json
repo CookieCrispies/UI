@@ -7,7 +7,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "uikit": "npm i ChocoBase/uikitChocoBase",
+    "uikit": "npm i chocoinu/uikitchocoinu",
     "eject": "react-app-rewired eject",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",

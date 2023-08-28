@@ -147,7 +147,7 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({
     tokenAddress: token.address,
   })
   const lpAddress = farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]
-  const bsc = `https://basescan.org//address/${lpAddress}`
+  const bsc = `https://https://www.shibariumscan.io//address/${lpAddress}`
   const info = `https://baseswap.fi/info/pools/${lpAddress}`
 
   const exchangeUrl = farm.pcsVersion && farm.pcsVersion > 1 ? PCS_ADD_LIQUIDITY_URL : BASE_ADD_LIQUIDITY_URL

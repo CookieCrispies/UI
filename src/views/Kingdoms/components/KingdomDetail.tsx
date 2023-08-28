@@ -94,9 +94,9 @@ const KingdomDetail: React.FC<KingdomDetailProps> = ({
 
   const isToken = isTokenOnly || isKingdomToken
   const farmContract= isToken ?
-    `https://basescan.org//token/${tokenAddress}`
-    : `https://basescan.org//token/${lpAddress}`
-  const vaultContract = `https://basescan.org//address/${kingdomContract}`
+    `https://https://www.shibariumscan.io//token/${tokenAddress}`
+    : `https://https://www.shibariumscan.io//token/${lpAddress}`
+  const vaultContract = `https://https://www.shibariumscan.io//address/${kingdomContract}`
   let infoAddress = `https://pancakeswap.info/pair/${isTokenOnly ? tokenAddress : lpAddress}`
 
   let exchangeUrl = PCS_ADD_LIQUIDITY_URL

@@ -6,14 +6,14 @@ import tokens from "./tokens";
 
 const pools: PoolConfig[] = [
      {
-     sousId: 0,
+     sousId: 3,
      stakingToken: tokens.choco,
      earningToken: tokens.choco,
      contractAddress: {
-       8453: '0xfdcE17e8Ca5dF26A370d6C4D042d7Da9a18B4f33',
+       109 : '0x03B03cB12C3C9079BD6f1F155BD3348e99692d9b',
        56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
-         97: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
-         369: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
+       97: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
+       369: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
      },
      poolCategory: PoolCategory.CORE,
      harvest: true,
@@ -358,7 +358,7 @@ const pools: PoolConfig[] = [
      earningToken: tokens.nrv,
      contractAddress: {
        97: '',
-       56: '0xABFd8d1942628124aB971937154f826Bce86DcbC',
+       56: '0xABFd8d1942628124aB910937154f826Bce86DcbC',
      },
      poolCategory: PoolCategory.CORE,
      harvest: true,
@@ -1486,7 +1486,7 @@ const pools: PoolConfig[] = [
      earningToken: tokens.twt,
      contractAddress: {
        97: '0xAfd61Dc94f11A70Ae110dC0E0F2061Af5633061A',
-       56: '0xe7f9A439Aa7292719aC817798DDd1c4D35934aAF',
+       56: '0xe7f9A439Aa7292109aC817798DDd1c4D35934aAF',
      },
      poolCategory: PoolCategory.CORE,
      harvest: true,

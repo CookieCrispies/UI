@@ -45,7 +45,7 @@ const CakeStats = () => {
         <Heading size="xl" mb="24px">
           {TranslateString(534, 'Choco Stats')}
         </Heading>
-        <Row>
+         <Row>
           <Text fontSize="14px">Market Cap</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
@@ -57,7 +57,7 @@ const CakeStats = () => {
           <Text fontSize="14px">Total Burned</Text>
           <CardValue fontSize="14px" value={0} decimals={0} />
         </Row>
-        <Row>
+         <Row>
           <Text fontSize="14px">New Choco/block</Text>
           <Text bold fontSize="14px">
             {ChocoPerBlock}

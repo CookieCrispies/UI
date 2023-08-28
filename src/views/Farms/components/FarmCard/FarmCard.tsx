@@ -228,12 +228,12 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, plsPrice,
         <DetailsSection
           removed={removed}
           isTokenOnly={farm.isTokenOnly}
-          // bscScanAddress={`https://basescan.org//address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
+          // bscScanAddress={`https://https://www.shibariumscan.io//address/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`}
           bscScanAddress={
             farm.isTokenOnly ?
-              `https://basescan.org//token/${farm.token.address[process.env.REACT_APP_CHAIN_ID]}`
+              `https://www.shibariumscan.io/token/${farm.token.address[process.env.REACT_APP_CHAIN_ID]}`
               :
-              `https://basescan.org//token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              `https://www.shibariumscan.io/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
           }
           infoAddress={`https://baseswap.fi/info/pools/${lpAddress}`}
           totalValueFormatted={totalValueFormatted}

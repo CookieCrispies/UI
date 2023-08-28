@@ -58,7 +58,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BTCB-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x7561EEe90e24F3b348E1087A005F78B4c8453524',
+      56: '0x7561EEe90e24F3b348E1087A005F78B4c109 524',
     },
     token: tokens.btcb,
     quoteToken: tokens.wbnb,
@@ -168,7 +168,7 @@ const farms: FarmConfig[] = [
   //   tokenSymbol: 'bLEO',
   //   tokenAddresses: {
   //     97: '',
-  //     56: '0x6421531AF54C7B14Ea805719035EBf1e3661c44A',
+  //     56: '0x6421531AF54C7B14Ea805109035EBf1e3661c44A',
   //   },
   //   quoteTokenSymbol: QuoteToken.BNB,
   //   quoteTokenAdresses: contracts.wbnb,
@@ -296,7 +296,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x8b97f5b65532d2f89ff0e60e308540bb20e47933',
       369: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31', // Cookie-BUSD LP
-      8453: '',
+      109 : '',
 
     },
     token: tokens.bhbd,
@@ -326,80 +326,120 @@ const farms: FarmConfig[] = [
   }, */
   {
     pid: 0,
-    lpSymbol: 'CHOCO-ETH LP',
+    lpSymbol: 'CHOCO-BONE LP',
     lpAddresses: {
       97: '',
       56: '0x7BaE0d7D2760E681559fbb502b43fFA26561bA24',
       369: '0x4168ff74C6D552cB05e48B4D28018326bB2079Bb', 
-      8453: '0xb299321d689c366057B95C0ff10a5Ba936290A63', // TODO
+      109 : '0x0824B31568259Fe8A9Df5e184226C70c2A602E95', // TODO
+    },
+    token: tokens.choco,
+    quoteToken: tokens.WBONE,
+  },
+  {
+    pid: 1,
+    lpSymbol: 'CHOCO-WETH LP',
+    lpAddresses: {
+      97: '',
+      56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
+      369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
+      109 : '0x89e26af00c87bAE09125f4D4405f591d152578E3', // TODO
     },
     token: tokens.choco,
     quoteToken: tokens.eth,
   },
   {
-    pid: 1,
-    lpSymbol: 'CHOCO-USDC LP',
-    lpAddresses: {
-      97: '',
-      56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
-      369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
-      8453: '0xbff98F46c76ee3e0cFF3BfD3E0eDd9aca664F16C', // TODO
-    },
-    token: tokens.choco,
-    quoteToken: tokens.usdc,
-  },
-  {
     pid: 2,
-    lpSymbol: 'ETH-USDC LP',
+    lpSymbol: 'BONE-WETH LP',
     lpAddresses: {
       97: '',
       56: '0x7BaE0d7D2760E681559fbb502b43fFA26561bA24',
       369: '0x6753560538ECa67617A9Ce605178F788bE7E524E',
-      8453: '0x41d160033C222E6f3722EC97379867324567d883',
+      109 : '0xf7Ca0561E648043cfce9353E2F6f1A3A3813b3f5', // TODO
     },
-    token: tokens.eth,
-    quoteToken: tokens.usdc,
+    token: tokens.WBONE,
+    quoteToken: tokens.eth,
   },
   {
-    pid: 3,
+    pid: 5,
     isTokenOnly: true,
     lpSymbol: 'CHOCO',
     lpAddresses: {
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
-      8453: '0xbff98F46c76ee3e0cFF3BfD3E0eDd9aca664F16C', // TODO
+      109 : '0x89e26af00c87bAE09125f4D4405f591d152578E3', // TODO
     },
     token: tokens.choco,
-    quoteToken: tokens.usdc,
+    quoteToken: tokens.eth,
   },
   {
-    pid: 4,
+    pid: 3,
     isTokenOnly: true,
-    lpSymbol: 'ETH',
+    lpSymbol: 'WETH',
     lpAddresses: {
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      8453: '0x41d160033C222E6f3722EC97379867324567d883',
+      109 : '0x8ed7d143Ef452316Ab1123d28Ab302dC3b80d3ce',
     },
     token: tokens.eth,
     quoteToken: tokens.usdc,
   },
-  /* 
+  // {
+  //   pid: 5,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'USDC',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
+  //     369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
+  //     109 : '', // TODO
+  //   },
+  //   token: tokens.usdc,
+  //   quoteToken: tokens.dai,
+  // },
   {
-    pid: 5,
+    pid: 4,
     isTokenOnly: true,
-    lpSymbol: 'USDC',
+    lpSymbol: 'WBONE',
     lpAddresses: {
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      8453: '0x6D3c5a4a7aC4B1428368310E4EC3bB1350d01455',
+      109 : '0x213c25900f365F1BE338Df478CD82beF7Fd43F85', // TODO
     },
-    token: tokens.usdc,
-    quoteToken: tokens.dai,
+    token: tokens.WBONE,
+    quoteToken: tokens.usdc,
   },
+  // {
+  //   pid: 6,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'SHIB',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
+  //     369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
+  //     109 : '', // TODO
+  //   },
+  //   token: tokens.SHIB,
+  //   quoteToken: tokens.usdc,
+  // },
+  // {
+  //   pid: 6,
+  //   isTokenOnly: true,
+  //   lpSymbol: 'LEASH',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
+  //     369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', 
+  //     109 : '', // TODO
+  //   },
+  //   token: tokens.LEASH,
+  //   quoteToken: tokens.usdc,
+  // },
+
+  /*
   {
     pid: 6,
     isTokenOnly: true,
@@ -408,7 +448,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      8453: '0x6D3c5a4a7aC4B1428368310E4EC3bB1350d01455',
+      109 : '0x6D3c5a4a7aC4B1428368310E4EC3bB1350d01455',
     },
     token: tokens.dai,
     quoteToken: tokens.usdc,
@@ -420,7 +460,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      8453: '0x6D3c5a4a7aC4B1428368310E4EC3bB1350d01455',
+      109 : '0x6D3c5a4a7aC4B1428368310E4EC3bB1350d01455',
     },
     token: tokens.dai,
     quoteToken: tokens.usdc,
@@ -432,7 +472,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      8453: '0x07CFA5Df24fB17486AF0CBf6C910F24253a674D3',
+      109 : '0x07CFA5Df24fB17486AF0CBf6C910F24253a674D3',
     },
     token: tokens.cbeth,
     quoteToken: tokens.eth,
@@ -446,7 +486,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xcA8544E46153F6B2Ab535BB6549DAAAEcb71d58A', // TODO
-      8453: '0x5f0a153a64fd734c111b770da11de2c385ca8042',
+      109 : '0x5f0a153a64fd734c111b770da11de2c385ca8042',
     },
     token: tokens.toshi,
     quoteToken: tokens.eth,
@@ -459,7 +499,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0x6753560538ECa67617A9Ce605178F788bE7E524E',
-      8453: '',
+      109 : '',
     },
     token: tokens.wpls,
     quoteToken: tokens.usdc,
@@ -472,7 +512,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0x3225E3B0D3C6b97EC9848f7B40bb3030E5497709',
-      8453: '',
+      109 : '',
     },
     token: tokens.usdc,
     quoteToken: tokens.dai,
@@ -485,7 +525,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xE56043671df55dE5CDf8459710433C10324DE0aE',
-      8453: '',
+      109 : '',
     },
     token: tokens.dai,
     quoteToken: tokens.wpls,
@@ -498,7 +538,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0x6F1747370B1CAcb911ad6D4477b718633DB328c8',
-      8453: '',
+      109 : '',
     },
     token: tokens.hex,
     quoteToken: tokens.dai,
@@ -511,7 +551,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0xB2893ceA8080bF43b7b60B589EDaAb5211D98F23',
-      8453: '',
+      109 : '',
     },
     token: tokens.plsx,
     quoteToken: tokens.dai,
@@ -524,7 +564,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31',
       369: '0x4F0e991e170Aa644763Cb68ecc945Bdf957473eE',
-      8453: '',
+      109 : '',
     },
     token: tokens.inc,
     quoteToken: tokens.dai,
@@ -537,7 +577,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfdF68922460d7508f84bD55ACB9D276d3f9a2c31', // Cookie-BUSD LP
       369: '0xb10116FF560690EcE29c525C3596CC8F55a29B2C', // Cookie-BUSD LP
-      8453: '',
+      109 : '',
     },
     token: tokens.ehex,
     quoteToken: tokens.dai,

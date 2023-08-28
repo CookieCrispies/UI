@@ -1,1 +1,0 @@
-(self.webpackChunkCookiedefi_frontend=self.webpackChunkCookiedefi_frontend||[]).push([[563],{36563:function(){}}]);

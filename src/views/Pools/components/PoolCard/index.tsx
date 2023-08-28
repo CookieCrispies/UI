@@ -22,13 +22,13 @@ const PoolCard: React.FC<{ pool: Pool; account: string }> = ({ pool, account }) 
   return (
     <StyledCard
       isStaking={!isFinished && accountHasStakedBalance}
-      isFinished={isFinished && sousId !== 0}
+      isFinished={isFinished && sousId !== 3}
       ribbon={isFinished && <CardRibbon variantColor="textDisabled" text={`${TranslateString(388, 'Finished')}`} />}
     >
       <StyledCardHeader
         earningTokenSymbol={earningToken.symbol}
         stakingTokenSymbol={stakingToken.symbol}
-        isFinished={isFinished && sousId !== 0}
+        isFinished={isFinished && sousId !== 3}
       />
       <CardBody>
         <AprRow pool={pool} stakingTokenPrice={stakingTokenPrice} />

@@ -37,7 +37,7 @@ const Pools: React.FC = () => {
     [finishedPools],
   )
   // This pool is passed explicitly to the cake vault
-  const cakePoolData = useMemo(() => openPools.find((pool) => pool.sousId === 0), [openPools])
+  const cakePoolData = useMemo(() => openPools.find((pool) => pool.sousId === 3), [openPools])
 
   return (
     <>

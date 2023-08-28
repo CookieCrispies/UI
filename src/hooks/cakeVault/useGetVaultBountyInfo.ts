@@ -34,6 +34,7 @@ const useGetVaultBountyInfo = (refresh?: number) => {
       const dollarValueOfReward = estimatedCallBountyReward.multipliedBy(cakePrice)
       const estimatedDollars = getFullDisplayBalance(dollarValueOfReward, 18, 2)
       const estimatedCake = getFullDisplayBalance(estimatedCallBountyReward, 18, 3)
+
       setDollarBountyToDisplay(estimatedDollars)
       setCakeBountyToDisplay(estimatedCake)
     }

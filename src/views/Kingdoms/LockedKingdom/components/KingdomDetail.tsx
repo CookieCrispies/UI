@@ -98,9 +98,9 @@ const KingdomDetail: React.FC<KingdomDetailProps> = ({
 
   const isToken = isTokenOnly || isKingdomToken
   const farmContract= isToken ?
-    `https://basescan.org//token/${tokenAddress}`
-    : `https://basescan.org//token/${lpAddress}`
-  const vaultContract = `https://basescan.org//address/${kingdomContract}`
+    `https://https://www.shibariumscan.io//token/${tokenAddress}`
+    : `https://https://www.shibariumscan.io//token/${lpAddress}`
+  const vaultContract = `https://https://www.shibariumscan.io//address/${kingdomContract}`
   let infoAddress = `https://pancakeswap.info/pair/${isTokenOnly ? tokenAddress : lpAddress}`
 
   const avgLockDuration = useAvgLockDuration(new BigNumber(farm?.lockedKingdomData?.totalLockedAmount || 0), new BigNumber(farm?.lockedKingdomData?.totalShares || 0), new BigNumber(farm?.lockedKingdomData?.totalBalance || 0), new BigNumber(farm?.lockedKingdomData?.pricePerFullShare || 0));

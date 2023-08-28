@@ -94,7 +94,7 @@ const ifos: Ifo[] = [
       currency: 'Cookie-BUSD LP',
       currencyAddress: '0xfdf68922460d7508f84bd55acb9d276d3f9a2c31',
       tokenDecimals: 18,
-      releaseBlockNumber: 3771926,
+      releaseBlockNumber: 3710926,
     },
 
    /* {

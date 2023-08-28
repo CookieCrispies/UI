@@ -436,9 +436,9 @@ const LockedKingdomCard: React.FC<KingdomCardProps> = ({
           <ActionContent style={{flex: "50%"}}>
             <div>
           <ActionTitles>
-            <Title>RECENT Cookie PROFIT</Title>
+            <Title>RECENT Choco PROFIT</Title>
           </ActionTitles>
-             <Earned>{countUp}Cookie</Earned>
+             <Earned>{countUp}Choco</Earned>
             <Staked>~{countUp2}USD</Staked>
             </div>
           </ActionContent>
@@ -465,7 +465,7 @@ const LockedKingdomCard: React.FC<KingdomCardProps> = ({
       </ActionTitles>
       <ActionContent style={{flexWrap: "wrap"}}>
         <div style={{width: "50%", flex: "50% 0 0"}}>
-          <Earned>{countUp}Cookie</Earned>
+          <Earned>{countUp}Choco</Earned>
           <Staked>~{countUp2}USD</Staked>
         </div>
         <div style={{width: "50%", flex: "50% 0 0"}}>

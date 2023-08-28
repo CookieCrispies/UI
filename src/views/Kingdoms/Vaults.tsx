@@ -108,10 +108,10 @@ const Vaults: React.FC = () => {
   const { account } = useWeb3React()
   const [sortOption, setSortOption] = useState('hot')
   const cakePrice = usePriceCakeBusd()
-  const realCakePrice = useBusdPriceFromLpSymbol('CAKE') || new BigNumber(0)
+  const realCakePrice = useBusdPriceFromLpSymbol('CHOCO') || new BigNumber(0)
   const bakePrice = useBusdPriceFromLpSymbol('BAKE-BNB LP')
   const beltPrice = useBusdPriceFromLpSymbol('BELT-BNB LP')
-  const CookieDen = useFarmFromPid(12)
+  const CookieDen = useFarmFromPid(3)
 
   const bnbDividends = useBnbDividends() || {}
 

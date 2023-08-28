@@ -31,7 +31,7 @@ const HarvestActions: React.FC<HarvestActionsProps> = ({
     getBalanceNumber(earnings.multipliedBy(earningTokenPrice), earningToken.decimals),
   )
   const hasEarnings = earnings.toNumber() > 0
-  const isCompoundPool = sousId === 0
+  const isCompoundPool = sousId === 3
 
   const [onPresentCollect] = useModal(
     <CollectModal

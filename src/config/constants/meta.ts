@@ -1,44 +1,44 @@
 import { PageMeta } from './types'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'ChocoBase',
+  title: 'chocoinu',
   description:
-    'Sweeten your DeFi journey with ChocoBase! 🌟 Embrace creamy yields and crumbly rewards on Base Blockchain.',
-  image: 'https://chocoBase.finance/images/2logos',
+    'Sweeten your DeFi journey with chocoinu! 🌟 Embrace creamy yields and crumbly rewards on Base Blockchain.',
+  image: 'https://chocoinu.finance/images/2logos',
 }
 
 export const customMeta: { [key: string]: PageMeta } = {
   '/': {
-    title: 'Home | ChocoBase',
+    title: 'Home | chocoinu',
   },
   '/competition': {
-    title: 'Trading Battle | ChocoBase',
+    title: 'Trading Battle | chocoinu',
   },
   '/prediction': {
-    title: 'Prediction | ChocoBase',
+    title: 'Prediction | chocoinu',
   },
   '/farms': {
-    title: 'Farms | ChocoBase',
+    title: 'Farms | chocoinu',
   },
   '/pools': {
-    title: 'Pools | ChocoBase',
+    title: 'Pools | chocoinu',
   },
   '/lottery': {
-    title: 'Lottery | ChocoBase',
+    title: 'Lottery | chocoinu',
   },
   '/collectibles': {
-    title: 'Collectibles | ChocoBase',
+    title: 'Collectibles | chocoinu',
   },
   '/ido': {
-    title: 'Initial DEX Offering | ChocoBase',
+    title: 'Initial DEX Offering | chocoinu',
   },
   '/teams': {
-    title: 'Leaderboard | ChocoBase',
+    title: 'Leaderboard | chocoinu',
   },
   '/profile/tasks': {
-    title: 'Task Center | ChocoBase',
+    title: 'Task Center | chocoinu',
   },
   '/profile': {
-    title: 'Your Profile | ChocoBase',
+    title: 'Your Profile | chocoinu',
   },
 }

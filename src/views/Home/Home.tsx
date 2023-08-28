@@ -123,7 +123,7 @@ const Home: React.FC = () => {
           <FarmStakingCard />
           <TwitterCard/>
           <CakeStats />
-          <TotalValueLockedCard />
+          <TotalValueLockedCard /> 
         </Cards>
       </div>
     </Page>

@@ -3,8 +3,8 @@ import tokens from 'config/constants/tokens'
 import { Address } from 'config/constants/types'
 
 export const getAddress = (address: Address): string => {
-  const mainNetChainId = 8453
-  const chainId = 8453
+  const mainNetChainId = 109 
+  const chainId = 109 
   return address[chainId] ? address[chainId] : address[mainNetChainId]
 }
 
